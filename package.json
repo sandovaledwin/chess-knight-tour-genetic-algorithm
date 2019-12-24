@@ -1,0 +1,19 @@
+{
+  "name": "chess-knight-tour",
+  "version": "0.0.1",
+  "description": "Genetic algorithm for solving the chess knight tour problem",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "genetic",
+    "algorithm",
+    "chess",
+    "knight",
+    "tour"
+  ],
+  "author": "Carlos Edwin Sandoval Diaz",
+  "license": "MIT"
+}
