@@ -60,6 +60,16 @@ function generateInitialPosition(boardRows, boardColumns) {
   return [row, column];
 }
 
+function generatePopulation(size, rows, cols) {
+  let population = [];
+  let chromosome = [];
+  for (i=0; i<size; i++) {
+    chromosome = initChromosome(rows, cols);
+    population.push(fitnest(chromosome, rows, cols));
+  }
+  return population;
+}
+
 function generateRandomTour(boardRows, boardColumns) {
   const tour = [];
   const squares = boardColumns * boardRows * 3;
@@ -134,6 +144,10 @@ function makeMove(board, knightMove, lastPosition, moveOrder) {
   return board;
 }
 
+function sortByScore(a, b) {
+  return b.score - a.score;
+}
+
 //generateTours()
 
 //
@@ -145,8 +159,15 @@ console.log("");
 
 const rows = 4;
 const cols = 8;
+const populationSize = 20;
 
-let chromosome = initChromosome(rows, cols);
-let result = fitnest(chromosome, rows, cols);
+let population = generatePopulation(populationSize, rows, cols);
 
-console.log(result);
+//console.log(population);
+
+population.sort(sortByScore);
+
+for (let i=0; i<populationSize; i++) {
+  console.log(population[i].score);
+  console.log(population[i].board);
+}
