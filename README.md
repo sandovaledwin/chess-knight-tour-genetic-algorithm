@@ -5,7 +5,7 @@
 This project was developed following some of the main ideas found in the next
 researches about the subject:
 
-* [Paper - Genetic Algorithms with Heuristic - Knight's Tour Problem](https://www.researchgate.net/publication/220862449_Genetic_Algorithms_with_Heuristic_-_Knight's_Tour_Problem).
+* [Genetic Algorithms with Heuristic - Knight's Tour Problem](https://www.researchgate.net/publication/220862449_Genetic_Algorithms_with_Heuristic_-_Knight's_Tour_Problem).
 
 * [GeneRepair - A Repair Operator for Genetic Algorithms](https://www.researchgate.net/publication/229149949_GeneRepair_-_A_Repair_Operator_for_Genetic_Algorithms).
 
